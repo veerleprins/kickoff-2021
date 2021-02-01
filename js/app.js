@@ -14,12 +14,18 @@ const getPerson = (data, person) => {
 };
 
 const createElements = (data) => {
-  changeImg(`${data.mugshot}`, "img", 0);
-  changeText(`${data.name} ${data.surname}`, "h2", 0);
-  changeText(`Frontend developer`, "h3", 0);
-  changeText(`Dit is een quote of extra informatie`, "p", 0);
-  changeText(`Dit is een quote of extra informatie`, "p", 0);
-  changeHref(`${data.githubHandle}`, "a", 0);
+  changeImg(`${data.mugshot}`, "img");
+  changeText(`${data.name} ${data.surname}`, "h2");
+  changeText(`Frontend developer`, "h3");
+  changeText(`${data.other.workplace}`, "p");
+  changeText(`${data.other.music}`, "p", 1);
+  changeText(`${data.other.movie}`, "p", 2);
+  changeHref(
+    `${data.githubHandle}`,
+    "a",
+    `github.com/${data.name + data.surname}`
+  );
+  changeHref(`mailto:${data.other.mail}`, "a", data.other.mail, 1);
 };
 
 const changeImg = (link, element, index = 0) => {
@@ -32,9 +38,10 @@ const changeText = (text, element, index = 0) => {
   elements[index].innerHTML = text;
 };
 
-const changeHref = (link, element, index) => {
+const changeHref = (link, element, text, index = 0) => {
   const elements = Array.from(document.getElementsByTagName(element));
   elements[index].href = link;
+  elements[index].innerHTML = text;
 };
 
 // PUT REQUEST
@@ -49,11 +56,12 @@ const putData = {
   githubHandle: "https://github.com/veerleprins",
   other: {
     age: "23",
+    mail: "info@veerleprins.nl",
     movie: "Horror, Thriller, Komedie, Actie",
     sport: "Geen sport",
     pet: "Hond",
-    muziek: "House, Lo-Fi beats",
-    werkplek: "Op mijn slaapkamer aan mijn bureau",
+    music: "House, Lo-Fi beats",
+    workplace: "Op mijn slaapkamer aan mijn bureau.",
   },
 };
 
