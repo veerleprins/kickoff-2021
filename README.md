@@ -1,25 +1,46 @@
-# Minor Web Design & Development Kickoff 2021
+# Minor Web Design & Development Kickoff - 2021
 
-## Informatie
-Maandag, 1 februari  begin om 9:30 de kickoff. Be there !
-We gaan kennismaken, teams indelen en daarna beginnen met het vak Web App From Scratch. 
+## Individual Business Card
 
-De kickoff is in Teams in het [Minor Web kanaal](https://teams.microsoft.com/l/team/19:2f2281432e854d4789de9c4b1b49311c@thread.tacv2/conversations?groupId=5d001f9a-0a4b-4768-92b1-0f1768328ba3&tenanteamId=0907bb1e-21fc-476f-8843-02d09ceb59a7). Als het goed is ben je hier al aan toegevoegd. 
-Zorg dat je klaar zit aan een goed tafel, kam je haren, zorg dat je camera het doet. Microfoon en koptelefoon bij de hand. We zitten niet met elkaar in een lokaal, maar zorg er voor dat je een goede werkplek hebt en geconcentreerd kan werken. 
-Als je geen goede werkplek hebt neem dan vooral via Teams contact op met Joost of Koop, dan kunnen we je helpen. 
+<img width="1624" alt="Screenshot of the page with the visualizations." src="https://user-images.githubusercontent.com/35265583/106625746-40f14780-6577-11eb-9153-62b9321515ee.png">
 
-## Opdracht
-[Bekijk de opdracht: Kennismaken met je team](https://cmda-minor-web.github.io/kickoff-2021/)
+## :black_nib: Description
 
+For the Kickoff within the Minor Web Design & Development ([@cmda-minor-web](https://github.com/cmda-minor-web)) we created a business card with only HTML5, CSS3 and vanilla JavaScript.
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+This is part of the team page that has been set up by team [Roodbots](https://github.com/BVictorB/teampagina).
 
-<!-- ☝️ replace this description with a description of your own work -->
+This repository shows my personal business card from a created API.
 
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
+## :arrow_down: Install
 
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
+### 1. Install npm :computer:
 
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
+Before getting started, you need to install nvm. nvm can be installed by typing the following line of code in terminal and pressing enter:
 
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+`curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh `
+
+If nvm has been successfully installed, you can check the version by typing the following line of code in the terminal and pressing enter:
+
+`nvm --version`
+
+### 2. :open_file_folder: Clone folder
+
+Then you need to download this project and open it with your code editor. To do this, open your terminal with the correct path in which you want this repository. **Example**:
+
+`cd/Desktop/Repos`
+
+Then type the following line of code into your terminal:
+
+`git clone https://github.com/veerleprins/kickoff-2021.git`
+
+With this line of code, you've successfully downloaded the repository to your desired location.
+
+## :globe_with_meridians: GitHub Pages
+
+My web application can be found at the link below:  
+https://veerleprins.github.io/kickoff-2021/
+
+## :lock: License
+
+This repo is licensed as [MIT]() by :copyright: [Veerle Prins](https://github.com/veerleprins), 2020.
