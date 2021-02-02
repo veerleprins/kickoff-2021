@@ -5,6 +5,7 @@ const url = "https://600ff44f6c21e1001704fac2.mockapi.io/minor-web/api/";
 const teams = fetch(`${url}/squads/1/teams/1/members`)
   .then((response) => response.json())
   .then((data) => {
+    console.log(data);
     const person = getPerson(data, "Veerle");
     createElements(person[0]);
   });
@@ -21,7 +22,7 @@ const createElements = (data) => {
   changeText(`${data.other.music}`, "p", 1);
   changeText(`${data.other.movie}`, "p", 2);
   changeHref(
-    `${data.githubHandle}`,
+    `https://github.com/${data.githubHandle}`,
     "a",
     `github.com/${data.name + data.surname}`
   );
@@ -53,15 +54,16 @@ const putData = {
   surname: "Prins",
   mugshot:
     "https://avatars.githubusercontent.com/u/35265583?s=400&u=47b65ecd0d19e635807f65efbaed120170425a9d&v=4",
-  githubHandle: "https://github.com/veerleprins",
+  githubHandle: "veerleprins",
+  url: "https://veerleprins.github.io/kickoff-2021/",
   other: {
     age: "23",
+    music: "House, Lo-Fi beats",
+    pet: "Hond",
+    sport: "Geen sport",
+    workplace: "Op mijn slaapkamer aan mijn bureau.",
     mail: "info@veerleprins.nl",
     movie: "Horror, Thriller, Komedie, Actie",
-    sport: "Geen sport",
-    pet: "Hond",
-    music: "House, Lo-Fi beats",
-    workplace: "Op mijn slaapkamer aan mijn bureau.",
   },
 };
 
